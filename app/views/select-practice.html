@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+
+      <form class="form" action="/select-premise" method="post">
+
+        <p><div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        Select your practice
+      </h1>
+    </legend>
+    <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="select-practice" name="select-practice" type="radio" value="Practice 1">
+        <label class="govuk-label govuk-radios__label" for="select-practice">
+          Sherlock Veterinary Practice, 221B Baker Street, London NW1 6XE
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="select-practice-2" name="select-practice" type="radio" value="Practice 2">
+        <label class="govuk-label govuk-radios__label" for="select-practice-2">
+          Steptoe & Son Veterinary Practice, 24 Oil Drum Lane, Shepherd's Bush, London W12 8TT
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="select-practice-3" name="select-practice" type="radio" value="Practice 3">
+        <label class="govuk-label govuk-radios__label" for="select-practice-3">
+          Paddington Veterinary Practice, 32 Windsor Gardens, London W39 3RG
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div></p>
+
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

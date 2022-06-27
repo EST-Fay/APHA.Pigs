@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Approximately how many pigs are kept on the premises?</h1>
+      <div id="pig-type-hint" class="govuk-hint">
+        This includes post-weaned and breeding pigs. Do not include pre-weaned pigs. </br>
+        For adult pigs, tell us the number of sows, breeding boars, and gilts. Do not include maiden gilts.
+      </div>
+
+      <form class="form" action="/supply-other-premises" method="post">
+
+        <div class="govuk-form-group">
+  <label class="govuk-label" for="event-name">
+    Number of post-weaned and breeding pigs
+  </label>
+  <input class="govuk-input" id="event-name" name="event-name" type="text">
+</div>
+<div class="govuk-form-group">
+<label class="govuk-label" for="event-name">
+Number of adult sows, breeding boars and gilts
+</label>
+<input class="govuk-input" id="event-name" name="event-name" type="text">
+</div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

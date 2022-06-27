@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+
+      <form class="form" action="/url/of/next/page" method="post">
+
+        <p>
+          <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="pig-type-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        There are no livestock details for this premises
+      </h1>
+    </legend>
+    <div id="pig-type-hint" class="govuk-hint">
+      You can add details now, or select a different premesis
+    </div>
+
+        <div class="govuk-radios" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="no-livestock" name="no-livestock" type="radio" value="add">
+            <label class="govuk-label govuk-radios__label" for="no-livestock">
+              Add livestock details for this premesis
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="no-livestock-2" name="no-livestock" type="radio" value="different">
+            <label class="govuk-label govuk-radios__label" for="no-livestock-2">
+              Select a different premesis
+            </label>
+          </div>
+        </div>
+
+      </fieldset>
+    </div>
+</p>
+
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

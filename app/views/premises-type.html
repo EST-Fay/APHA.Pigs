@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+
+      <form class="form" action="/number-of-pigs-kept-on-premises" method="post">
+
+        <p><div class="govuk-form-group">
+               <fieldset class="govuk-fieldset">
+                   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                       <h1 class="govuk-fieldset__heading">
+                           Which type of premises is this?
+                       </h1>
+                   </legend>
+                   <div id="pig-type-hint" class="govuk-hint">
+                       Select the option that best defines the premesis.
+                   </div>
+                   <div class="govuk-radios" data-module="govuk-radios">
+                       <div class="govuk-radios__item">
+                           <input class="govuk-radios__input" id="select-practice" name="select-practice" type="radio" value="Practice 1">
+                           <label class="govuk-label govuk-radios__label" for="select-practice">
+                               Breeder-weaner (including boar studs) </br> Breeding herd where piglets leave as weaners
+                           </label>
+                       </div>
+                       <div class="govuk-radios__item">
+                           <input class="govuk-radios__input" id="select-practice-2" name="select-practice" type="radio" value="Practice 2">
+                           <label class="govuk-label govuk-radios__label" for="select-practice-2">
+                               Breeder-grower producer </br> Breeding herd where piglets leave as growers
+                           </label>
+                       </div>
+                       <div class="govuk-radios__item">
+                           <input class="govuk-radios__input" id="select-practice-3" name="select-practice" type="radio" value="Practice 3">
+                           <label class="govuk-label govuk-radios__label" for="select-practice-3">
+                               Breeder-finisher </br> Breeding herd where piglets reach finishing age
+                           </label>
+                       </div>
+                       <div class="govuk-radios__item">
+                           <input class="govuk-radios__input" id="select-practice-3" name="select-practice" type="radio" value="Practice 3">
+                           <label class="govuk-label govuk-radios__label" for="select-practice-3">
+                               Finisher </br> Post-weaned pigs kept from 40kg and over to finish
+                           </label>
+                       </div>
+                       <div class="govuk-radios__item">
+                           <input class="govuk-radios__input" id="select-practice-3" name="select-practice" type="radio" value="Practice 3">
+                           <label class="govuk-label govuk-radios__label" for="select-practice-3">
+                               Nursery </br> Post-weaned pigs from weaning up to 40kg
+                           </label>
+                       </div>
+                       <div class="govuk-radios__item">
+                           <input class="govuk-radios__input" id="select-practice-3" name="select-practice" type="radio" value="Practice 3">
+                           <label class="govuk-label govuk-radios__label" for="select-practice-3">
+                               Nursery-finisher </br> Post-weaned pigs kept from weaning to finish
+                           </label>
+                       </div>
+                       <div class="govuk-radios__item">
+                           <input class="govuk-radios__input" id="select-practice-3" name="select-practice" type="radio" value="Practice 3">
+                           <label class="govuk-label govuk-radios__label" for="select-practice-3">
+                               Captive pigs, pet pigs and small herds </br> Less than 10 sows, or less than 50 growing pigs
+                           </label>
+                       </div>
+                   </div>
+
+               </fieldset>
+</div></p>
+
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
