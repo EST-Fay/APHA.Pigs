@@ -13,13 +13,91 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Heading or question goes here</h1>
 
       <form class="form" action="/url/of/next/page" method="post">
 
-        <p>[Insert question content here]</p>
+          <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                      <h1 class="govuk-fieldset__heading">
+                          Are there any other clinical signs?
+                      </h1>
+                  </legend>
+                  <div id="waste-hint" class="govuk-hint">
+                      Select up to 2 other clinical signs, if present
+                  </div>
+                  <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                      <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste">
+                              Nervous
+                          </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                              Non-specific malaise
+                          </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                              Musculoskeletal (includes conditions causing lameness and those without lameness, such as kyphosis)
+                          </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                              Pigs found dead (no signs seen)
+                          </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                              Reproductive
+                          </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                              Respiratory
+                          </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                              Skin
+                          </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                              Urinary
+                          </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                              Vice
+                          </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                              Wasting or poor growth
+                          </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                              Other
+                          </label>
+                      </div>
 
-        <p>[See <a href="https://design-system.service.gov.uk">the GOV.UK Design System</a> for examples]</p>
+                  </div>
+
+              </fieldset>
+          </div>
 
         <button class="govuk-button" data-module="govuk-button">Continue</button>
 
